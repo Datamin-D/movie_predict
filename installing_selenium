@@ -1,0 +1,12 @@
+#in colab
+!pip install selenium
+!apt-get update 
+!apt install chromium-chromedriver
+
+from selenium import webdriver
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+wd = webdriver.Chrome('chromedriver',chrome_options=chrome_options)
+driver =webdriver.Chrome('chromedriver',chrome_options=chrome_options)
