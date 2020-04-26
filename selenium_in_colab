@@ -12,3 +12,5 @@ wd = webdriver.Chrome('chromedriver',options=options)
 wd.get("https://www.website.com")
 print(wd.page_source)  # results
 # divs = wd.find_elements_by_css_selector('div')
+#구글 드라이브에 마운트하고 파일 업로드해야 되기도..?
+
