@@ -1,0 +1,7 @@
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
+#wait 객체 생성
+wait = WebDriverWait(wd, 10)  #WebDriverWait(셀레니움 드라이버, 기다릴 초)
+#멈추고 싶을 때 아래 코드 넣기.
+wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "태그"))) #CSS_selecor말고 다른거도 됨.
